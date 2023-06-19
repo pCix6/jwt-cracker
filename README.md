@@ -8,6 +8,9 @@ Example:
 
 `python3 jwtCracker.py eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyNjZ9.eACboSCOtTVHgLYDFtvirg md5 WordListJWT.txt 10`
 
+![image](https://github.com/pCix6/jwt-cracker/assets/31138202/1167434b-2ec3-4424-9400-38129b0b59e9)
+
+
 At this point, the md5, sha256 and sha512 algorithms can be passed by argument. If a different hashing algorithm is used, it can be implemented without further complication.
 
 # Description
@@ -19,6 +22,8 @@ In addition to the main script, a secondary script was created to corroborate th
 
 `python3 build_jwt.py <jsonBody> <jsonPayload> <secret> <algorithm>`
 
-Example:
+Example (jwt used to crack in the usage example):
 
 `python3 build_jwt.py "{\"alg\":\"HS256\",\"typ\":\"JWT\"}" "{\"sub\":\"1234567890\",\"name\":\"John Doe\",\"iat\":151623902266}" admin md5`
+
+![image](https://github.com/pCix6/jwt-cracker/assets/31138202/88cae8d0-2e50-4a06-bd76-34fb6331adcd)
