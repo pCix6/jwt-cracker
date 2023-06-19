@@ -1,6 +1,5 @@
 #!/usr/bin/python3
 import hmac, hashlib, base64, sys
-from concurrent.futures import ThreadPoolExecutor
 
 h=sys.argv[1]   #Header in JSON
 p=sys.argv[2]   #Payload in JSON
