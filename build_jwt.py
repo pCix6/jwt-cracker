@@ -25,4 +25,4 @@ hmac_value = hmac.new(secret, (h64+b'.'+p64), alg).hexdigest()
 s= bytes.fromhex(hmac_value)
 s64=bytes(base64.b64encode(s).decode('utf-8').strip('='),'utf-8')
 
-print('\njwt: ',h64.decode('utf-8')+'.'+p64.decode('utf-8')+'.'+s64.decode('utf-8') )
+print('jwt: ',h64.decode('utf-8')+'.'+p64.decode('utf-8')+'.'+s64.decode('utf-8') )
