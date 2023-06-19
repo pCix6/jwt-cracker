@@ -20,7 +20,7 @@ We tried to keep the use of the script simple by leaving the possibility to crea
 
 In addition to the main script, a secondary script was created to corroborate the correct creation of jwts, its use is the following:
 
-`python3 build_jwt.py <jsonBody> <jsonPayload> <secret> <algorithm>`
+`python3 build_jwt.py <jsonHeader> <jsonPayload> <secret> <algorithm>`
 
 Example (jwt used to crack in the usage example):
 
